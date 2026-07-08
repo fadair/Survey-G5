@@ -7,5 +7,6 @@ layout: default
 </iframe>
 
 <img src="Africa Tropical Forest Ecoregions.png" alt="Land cover map of Cameroon and linguistic groups."/>
+</img>
 
 F. Adair
