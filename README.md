@@ -3,7 +3,7 @@ Francis J Adair<br>
 fadair206@icloud.com<br>
 [Personal Website](https://fadair206.wordpress.com)
 
-QGIS Pilot Surveys UK: [G5](https://fadair.github.io/Survey-G5/)
+Open Survey [G5](https://fadair.github.io/Survey-G5/)
 
 ## License
 
