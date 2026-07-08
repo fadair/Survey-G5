@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:27700','+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +units=m +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/land_0.js"></script><script src="layers/national_parks_1.js"></script><script src="layers/urban_areas_2.js"></script><script src="layers/sites_3.js"></script><script src="layers/greenspace_4.js"></script><script src="layers/woodland_5.js"></script><script src="layers/contours_6.js"></script><script src="layers/district_buildings_7.js"></script><script src="layers/local_buildings_8.js"></script><script src="layers/surfacewater_9.js"></script><script src="layers/foreshore_10.js"></script><script src="layers/waterlines_11.js"></script><script src="layers/roads_local_12.js"></script><script src="layers/roads_regional_13.js"></script><script src="layers/roads_national_14.js"></script><script src="layers/rail_15.js"></script><script src="layers/boundaries_16.js"></script><script src="layers/etl_17.js"></script><script src="layers/railway_stations_18.js"></script><script src="layers/airports_19.js"></script><script src="layers/names_20.js"></script><script src="layers/District_21.js"></script><script src="layers/Extent_22.js"></script><script src="layers/Survey_23.js"></script>
+        <script src="styles/land_0_style.js"></script><script src="styles/national_parks_1_style.js"></script><script src="styles/urban_areas_2_style.js"></script><script src="styles/sites_3_style.js"></script><script src="styles/greenspace_4_style.js"></script><script src="styles/woodland_5_style.js"></script><script src="styles/contours_6_style.js"></script><script src="styles/district_buildings_7_style.js"></script><script src="styles/local_buildings_8_style.js"></script><script src="styles/surfacewater_9_style.js"></script><script src="styles/foreshore_10_style.js"></script><script src="styles/waterlines_11_style.js"></script><script src="styles/roads_local_12_style.js"></script><script src="styles/roads_regional_13_style.js"></script><script src="styles/roads_national_14_style.js"></script><script src="styles/rail_15_style.js"></script><script src="styles/boundaries_16_style.js"></script><script src="styles/etl_17_style.js"></script><script src="styles/railway_stations_18_style.js"></script><script src="styles/airports_19_style.js"></script><script src="styles/names_20_style.js"></script><script src="styles/District_21_style.js"></script><script src="styles/Extent_22_style.js"></script><script src="styles/Survey_23_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
