@@ -766,7 +766,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_urban_areas_2rule0_eval_expression(context) {
+function exp_urban_areas_1rule0_eval_expression(context) {
     // type = 'National'
 
     var feature = context.feature;
@@ -779,7 +779,7 @@ function exp_urban_areas_2rule0_eval_expression(context) {
 }
 
 
-function exp_urban_areas_2rule1_eval_expression(context) {
+function exp_urban_areas_1rule1_eval_expression(context) {
     // type = 'Regional'
 
     var feature = context.feature;
@@ -792,7 +792,7 @@ function exp_urban_areas_2rule1_eval_expression(context) {
 }
 
 
-function exp_woodland_5rule0_eval_expression(context) {
+function exp_woodland_4rule0_eval_expression(context) {
     // type = 'National'
 
     var feature = context.feature;
@@ -805,7 +805,7 @@ function exp_woodland_5rule0_eval_expression(context) {
 }
 
 
-function exp_woodland_5rule1_eval_expression(context) {
+function exp_woodland_4rule1_eval_expression(context) {
     // type = 'Regional'
 
     var feature = context.feature;
@@ -818,7 +818,7 @@ function exp_woodland_5rule1_eval_expression(context) {
 }
 
 
-function exp_woodland_5rule2_eval_expression(context) {
+function exp_woodland_4rule2_eval_expression(context) {
     // type = 'Local'
 
     var feature = context.feature;
@@ -831,7 +831,7 @@ function exp_woodland_5rule2_eval_expression(context) {
 }
 
 
-function exp_contours_6rule0_eval_expression(context) {
+function exp_contours_5rule0_eval_expression(context) {
     // type = 'Index'
 
     var feature = context.feature;
@@ -844,7 +844,7 @@ function exp_contours_6rule0_eval_expression(context) {
 }
 
 
-function exp_contours_6rule1_eval_expression(context) {
+function exp_contours_5rule1_eval_expression(context) {
     // type = 'Normal'
 
     var feature = context.feature;
@@ -857,7 +857,7 @@ function exp_contours_6rule1_eval_expression(context) {
 }
 
 
-function exp_surfacewater_9rule0_eval_expression(context) {
+function exp_surfacewater_8rule0_eval_expression(context) {
     // type = 'National'
 
     var feature = context.feature;
@@ -870,7 +870,7 @@ function exp_surfacewater_9rule0_eval_expression(context) {
 }
 
 
-function exp_surfacewater_9rule1_eval_expression(context) {
+function exp_surfacewater_8rule1_eval_expression(context) {
     // type = 'Regional'
 
     var feature = context.feature;
@@ -883,7 +883,7 @@ function exp_surfacewater_9rule1_eval_expression(context) {
 }
 
 
-function exp_surfacewater_9rule2_eval_expression(context) {
+function exp_surfacewater_8rule2_eval_expression(context) {
     // type = 'Local'
 
     var feature = context.feature;
@@ -896,7 +896,7 @@ function exp_surfacewater_9rule2_eval_expression(context) {
 }
 
 
-function exp_rail_15rule0_eval_expression(context) {
+function exp_rail_14rule0_eval_expression(context) {
     // type = 'Multi Track'
 
     var feature = context.feature;
@@ -909,7 +909,7 @@ function exp_rail_15rule0_eval_expression(context) {
 }
 
 
-function exp_rail_15rule1_eval_expression(context) {
+function exp_rail_14rule1_eval_expression(context) {
     // type = 'Narrow Gauge'
 
     var feature = context.feature;
@@ -922,7 +922,7 @@ function exp_rail_15rule1_eval_expression(context) {
 }
 
 
-function exp_rail_15rule2_eval_expression(context) {
+function exp_rail_14rule2_eval_expression(context) {
     // type = 'Single Track'
 
     var feature = context.feature;
@@ -935,7 +935,7 @@ function exp_rail_15rule2_eval_expression(context) {
 }
 
 
-function exp_rail_15rule3_eval_expression(context) {
+function exp_rail_14rule3_eval_expression(context) {
     // type = 'Tunnel'
 
     var feature = context.feature;
@@ -944,213 +944,5 @@ function exp_rail_15rule3_eval_expression(context) {
         return (feature.get('type')  == 'Tunnel');
     } else {
         return (feature.get('type')  == 'Tunnel');
-    }
-}
-
-
-function exp_names_20rule0_eval_expression(context) {
-    // type = 'Capital'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Capital');
-    } else {
-        return (feature.get('type')  == 'Capital');
-    }
-}
-
-
-function exp_names_20rule1_eval_expression(context) {
-    // type = 'City'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'City');
-    } else {
-        return (feature.get('type')  == 'City');
-    }
-}
-
-
-function exp_names_20rule2_eval_expression(context) {
-    // type = 'Country'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Country');
-    } else {
-        return (feature.get('type')  == 'Country');
-    }
-}
-
-
-function exp_names_20rule3_eval_expression(context) {
-    // type = 'Greenspace'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Greenspace');
-    } else {
-        return (feature.get('type')  == 'Greenspace');
-    }
-}
-
-
-function exp_names_20rule4_eval_expression(context) {
-    // type = 'Hamlet'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Hamlet');
-    } else {
-        return (feature.get('type')  == 'Hamlet');
-    }
-}
-
-
-function exp_names_20rule5_eval_expression(context) {
-    // type = 'Landcover'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Landcover');
-    } else {
-        return (feature.get('type')  == 'Landcover');
-    }
-}
-
-
-function exp_names_20rule6_eval_expression(context) {
-    // type = 'Landform'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Landform');
-    } else {
-        return (feature.get('type')  == 'Landform');
-    }
-}
-
-
-function exp_names_20rule7_eval_expression(context) {
-    // type = 'Motorway Junctions'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Motorway Junctions');
-    } else {
-        return (feature.get('type')  == 'Motorway Junctions');
-    }
-}
-
-
-function exp_names_20rule8_eval_expression(context) {
-    // type = 'National Park'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'National Park');
-    } else {
-        return (feature.get('type')  == 'National Park');
-    }
-}
-
-
-function exp_names_20rule9_eval_expression(context) {
-    // type = 'Sites'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Sites');
-    } else {
-        return (feature.get('type')  == 'Sites');
-    }
-}
-
-
-function exp_names_20rule10_eval_expression(context) {
-    // type = 'Small Settlements'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Small Settlements');
-    } else {
-        return (feature.get('type')  == 'Small Settlements');
-    }
-}
-
-
-function exp_names_20rule11_eval_expression(context) {
-    // type = 'Suburban Area'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Suburban Area');
-    } else {
-        return (feature.get('type')  == 'Suburban Area');
-    }
-}
-
-
-function exp_names_20rule12_eval_expression(context) {
-    // type = 'Town'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Town');
-    } else {
-        return (feature.get('type')  == 'Town');
-    }
-}
-
-
-function exp_names_20rule13_eval_expression(context) {
-    // type = 'Village'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Village');
-    } else {
-        return (feature.get('type')  == 'Village');
-    }
-}
-
-
-function exp_names_20rule14_eval_expression(context) {
-    // type = 'Water'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Water');
-    } else {
-        return (feature.get('type')  == 'Water');
-    }
-}
-
-
-function exp_names_20rule15_eval_expression(context) {
-    // type = 'Woodland'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('type')  == 'Woodland');
-    } else {
-        return (feature.get('type')  == 'Woodland');
     }
 }

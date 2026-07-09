@@ -6,7 +6,7 @@ var map = new ol.Map({
     view: new ol.View({
         constrainResolution: true,
         maxZoom: 28,
-        minZoom: 15,
+        minZoom: 16,
         
         projection: new ol.proj.Projection({
             code: 'EPSG:27700',
@@ -526,6 +526,12 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //layerswitcher
 
+var layerSwitcher = new ol.control.LayerSwitcher({
+    tipLabel: "Layers",
+    target: 'top-right-container'
+});
+map.addControl(layerSwitcher);
+    
 
 
 
@@ -547,7 +553,8 @@ map.once('rendercomplete', function() {
     var attribHtml = `
     <a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
     <a href="https://openlayers.org/">OpenLayers</a> &middot;
-    <a href="https://qgis.org/">QGIS</a>`;
+    <a href="https://qgis.org/">QGIS</a> &middot;
+    <a href="https://www.ordnancesurvey.co.uk/products/os-open-zoomstack/">OS Open Zoomstack</a>`;
     if (layerAttrs.length > 0) { attribHtml += ' &nbsp;|&nbsp; ' + layerAttrs.join(', '); }
     bottomAttributionUl.innerHTML = '<li>' + attribHtml + '</li>';
   }
