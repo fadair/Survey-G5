@@ -16,6 +16,9 @@ Below is a map I made for '[Africa's Tropical Forests](https://zenodo.org/record
 
 ## References
 
+Contains public sector information licensed under the 
+Open Government Licence v3.0
+
 [OS Open Zoomstack](https://www.ordnancesurvey.co.uk/products/os-open-zoomstack/)
 
 [F. Adair](https://fadair206.wordpress.com)
