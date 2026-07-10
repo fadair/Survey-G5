@@ -553,8 +553,7 @@ map.once('rendercomplete', function() {
     var attribHtml = `
     <a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
     <a href="https://openlayers.org/">OpenLayers</a> &middot;
-    <a href="https://qgis.org/">QGIS</a> &middot;
-    <a href="https://www.ordnancesurvey.co.uk/products/os-open-zoomstack/">OS Open Zoomstack</a>`;
+    <a href="https://qgis.org/">QGIS</a>`;
     if (layerAttrs.length > 0) { attribHtml += ' &nbsp;|&nbsp; ' + layerAttrs.join(', '); }
     bottomAttributionUl.innerHTML = '<li>' + attribHtml + '</li>';
   }
