@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:27700").setExtent([257453.999600, 662299.198800, 260579.603300, 664843.179700]);
+//ol.proj.get("EPSG:27700").setExtent([257204.582029, 662076.202686, 260981.629718, 665202.197350]);
 var wms_layers = [];
 
 var format_land_0 = new ol.format.GeoJSON();
@@ -306,35 +306,35 @@ maxResolution:0.5600893230452393,
     <img src="styles/legend/railway_stations_15_3.png" /> London Underground Station<br />\
     <img src="styles/legend/railway_stations_15_4.png" /> Railway Station<br />\
     <img src="styles/legend/railway_stations_15_5.png" /> Railway Station And London Underground Station<br />' });
-var format_District_16 = new ol.format.GeoJSON();
-var features_District_16 = format_District_16.readFeatures(json_District_16, 
+var format_Postcode_16 = new ol.format.GeoJSON();
+var features_Postcode_16 = format_Postcode_16.readFeatures(json_Postcode_16, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:27700'});
-var jsonSource_District_16 = new ol.source.Vector({
+var jsonSource_Postcode_16 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_District_16.addFeatures(features_District_16);
-var lyr_District_16 = new ol.layer.Vector({
+jsonSource_Postcode_16.addFeatures(features_Postcode_16);
+var lyr_Postcode_16 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_District_16, 
-                style: style_District_16,
-                popuplayertitle: 'District',
+                source:jsonSource_Postcode_16, 
+                style: style_Postcode_16,
+                popuplayertitle: 'Postcode',
                 interactive: false,
-                title: '<img src="styles/legend/District_16.png" /> District'
+                title: '<img src="styles/legend/Postcode_16.png" /> Postcode'
             });
-var format_Extent_17 = new ol.format.GeoJSON();
-var features_Extent_17 = format_Extent_17.readFeatures(json_Extent_17, 
+var format_MapBorder_17 = new ol.format.GeoJSON();
+var features_MapBorder_17 = format_MapBorder_17.readFeatures(json_MapBorder_17, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:27700'});
-var jsonSource_Extent_17 = new ol.source.Vector({
+var jsonSource_MapBorder_17 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Extent_17.addFeatures(features_Extent_17);
-var lyr_Extent_17 = new ol.layer.Vector({
+jsonSource_MapBorder_17.addFeatures(features_MapBorder_17);
+var lyr_MapBorder_17 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Extent_17, 
-                style: style_Extent_17,
-                popuplayertitle: 'Extent',
+                source:jsonSource_MapBorder_17, 
+                style: style_MapBorder_17,
+                popuplayertitle: 'Map Border',
                 interactive: false,
-                title: '<img src="styles/legend/Extent_17.png" /> Extent'
+                title: '<img src="styles/legend/MapBorder_17.png" /> Map Border'
             });
 var format_Survey_18 = new ol.format.GeoJSON();
 var features_Survey_18 = format_Survey_18.readFeatures(json_Survey_18, 
@@ -352,12 +352,12 @@ var lyr_Survey_18 = new ol.layer.Vector({
                 title: '<img src="styles/legend/Survey_18.png" /> Survey'
             });
 var group_OSZoomstackOutdoor = new ol.layer.Group({
-                                layers: [lyr_land_0,lyr_urban_areas_1,lyr_sites_2,lyr_greenspace_3,lyr_woodland_4,lyr_contours_5,lyr_district_buildings_6,lyr_local_buildings_7,lyr_surfacewater_8,lyr_foreshore_9,lyr_waterlines_10,lyr_roads_local_11,lyr_roads_regional_12,lyr_roads_national_13,lyr_rail_14,lyr_railway_stations_15,lyr_District_16,lyr_Extent_17,],
-                                fold: 'open',
+                                layers: [lyr_land_0,lyr_urban_areas_1,lyr_sites_2,lyr_greenspace_3,lyr_woodland_4,lyr_contours_5,lyr_district_buildings_6,lyr_local_buildings_7,lyr_surfacewater_8,lyr_foreshore_9,lyr_waterlines_10,lyr_roads_local_11,lyr_roads_regional_12,lyr_roads_national_13,lyr_rail_14,lyr_railway_stations_15,],
+                                fold: 'close',
                                 title: 'OS Zoomstack Outdoor'});
 
-lyr_land_0.setVisible(true);lyr_urban_areas_1.setVisible(true);lyr_sites_2.setVisible(true);lyr_greenspace_3.setVisible(true);lyr_woodland_4.setVisible(true);lyr_contours_5.setVisible(true);lyr_district_buildings_6.setVisible(true);lyr_local_buildings_7.setVisible(true);lyr_surfacewater_8.setVisible(true);lyr_foreshore_9.setVisible(true);lyr_waterlines_10.setVisible(true);lyr_roads_local_11.setVisible(true);lyr_roads_regional_12.setVisible(true);lyr_roads_national_13.setVisible(true);lyr_rail_14.setVisible(true);lyr_railway_stations_15.setVisible(true);lyr_District_16.setVisible(false);lyr_Extent_17.setVisible(true);lyr_Survey_18.setVisible(true);
-var layersList = [group_OSZoomstackOutdoor,lyr_Survey_18];
+lyr_land_0.setVisible(true);lyr_urban_areas_1.setVisible(true);lyr_sites_2.setVisible(true);lyr_greenspace_3.setVisible(true);lyr_woodland_4.setVisible(true);lyr_contours_5.setVisible(true);lyr_district_buildings_6.setVisible(true);lyr_local_buildings_7.setVisible(true);lyr_surfacewater_8.setVisible(true);lyr_foreshore_9.setVisible(true);lyr_waterlines_10.setVisible(true);lyr_roads_local_11.setVisible(true);lyr_roads_regional_12.setVisible(true);lyr_roads_national_13.setVisible(true);lyr_rail_14.setVisible(true);lyr_railway_stations_15.setVisible(true);lyr_Postcode_16.setVisible(false);lyr_MapBorder_17.setVisible(true);lyr_Survey_18.setVisible(true);
+var layersList = [group_OSZoomstackOutdoor,lyr_Postcode_16,lyr_MapBorder_17,lyr_Survey_18];
 lyr_land_0.set('fieldAliases', {'id': 'id', });
 lyr_urban_areas_1.set('fieldAliases', {'id': 'id', 'type': 'type', });
 lyr_sites_2.set('fieldAliases', {'id': 'id', 'type': 'type', });
@@ -374,8 +374,8 @@ lyr_roads_regional_12.set('fieldAliases', {'id': 'id', 'type': 'type', 'name': '
 lyr_roads_national_13.set('fieldAliases', {'id': 'id', 'type': 'type', 'name': 'name', 'number': 'number', 'level': 'level', });
 lyr_rail_14.set('fieldAliases', {'id': 'id', 'type': 'type', });
 lyr_railway_stations_15.set('fieldAliases', {'id': 'id', 'type': 'type', 'name': 'name', });
-lyr_District_16.set('fieldAliases', {'fid': 'fid', 'District': 'District', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
-lyr_Extent_17.set('fieldAliases', {'fid': 'fid', 'District': 'District', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', 'width': 'width', 'height': 'height', 'area': 'area', 'perimeter': 'perimeter', });
+lyr_Postcode_16.set('fieldAliases', {'fid': 'fid', 'District': 'District', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', });
+lyr_MapBorder_17.set('fieldAliases', {'fid': 'fid', 'District': 'District', 'Shape_Leng': 'Shape_Leng', 'Shape_Area': 'Shape_Area', 'width': 'width', 'height': 'height', 'area': 'area', 'perimeter': 'perimeter', });
 lyr_Survey_18.set('fieldAliases', {'fid': 'fid', 'Date': 'Date', 'Time': 'Time', 'Description': 'Description', 'Attachment': 'Attachment', });
 lyr_land_0.set('fieldImages', {'id': 'TextEdit', });
 lyr_urban_areas_1.set('fieldImages', {'id': 'TextEdit', 'type': 'TextEdit', });
@@ -393,8 +393,8 @@ lyr_roads_regional_12.set('fieldImages', {'id': 'TextEdit', 'type': 'TextEdit', 
 lyr_roads_national_13.set('fieldImages', {'id': 'TextEdit', 'type': 'TextEdit', 'name': 'TextEdit', 'number': 'TextEdit', 'level': 'Range', });
 lyr_rail_14.set('fieldImages', {'id': 'TextEdit', 'type': 'TextEdit', });
 lyr_railway_stations_15.set('fieldImages', {'id': 'TextEdit', 'type': 'TextEdit', 'name': 'TextEdit', });
-lyr_District_16.set('fieldImages', {'fid': 'TextEdit', 'District': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
-lyr_Extent_17.set('fieldImages', {'fid': 'TextEdit', 'District': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', 'width': 'TextEdit', 'height': 'TextEdit', 'area': 'TextEdit', 'perimeter': 'TextEdit', });
+lyr_Postcode_16.set('fieldImages', {'fid': 'TextEdit', 'District': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', });
+lyr_MapBorder_17.set('fieldImages', {'fid': 'TextEdit', 'District': 'TextEdit', 'Shape_Leng': 'TextEdit', 'Shape_Area': 'TextEdit', 'width': 'TextEdit', 'height': 'TextEdit', 'area': 'TextEdit', 'perimeter': 'TextEdit', });
 lyr_Survey_18.set('fieldImages', {'fid': 'TextEdit', 'Date': 'DateTime', 'Time': 'DateTime', 'Description': 'TextEdit', 'Attachment': 'ExternalResource', });
 lyr_land_0.set('fieldLabels', {'id': 'no label', });
 lyr_urban_areas_1.set('fieldLabels', {'id': 'no label', 'type': 'inline label - always visible', });
@@ -412,9 +412,9 @@ lyr_roads_regional_12.set('fieldLabels', {'id': 'no label', 'type': 'no label', 
 lyr_roads_national_13.set('fieldLabels', {'id': 'no label', 'type': 'no label', 'name': 'no label', 'number': 'no label', 'level': 'no label', });
 lyr_rail_14.set('fieldLabels', {'id': 'inline label - always visible', 'type': 'no label', });
 lyr_railway_stations_15.set('fieldLabels', {'id': 'no label', 'type': 'no label', 'name': 'no label', });
-lyr_District_16.set('fieldLabels', {'fid': 'no label', 'District': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
-lyr_Extent_17.set('fieldLabels', {'fid': 'no label', 'District': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', 'width': 'no label', 'height': 'no label', 'area': 'no label', 'perimeter': 'no label', });
-lyr_Survey_18.set('fieldLabels', {'fid': 'hidden field', 'Date': 'inline label - always visible', 'Time': 'hidden field', 'Description': 'inline label - always visible', 'Attachment': 'inline label - always visible', });
+lyr_Postcode_16.set('fieldLabels', {'fid': 'no label', 'District': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', });
+lyr_MapBorder_17.set('fieldLabels', {'fid': 'no label', 'District': 'no label', 'Shape_Leng': 'no label', 'Shape_Area': 'no label', 'width': 'no label', 'height': 'no label', 'area': 'no label', 'perimeter': 'no label', });
+lyr_Survey_18.set('fieldLabels', {'fid': 'hidden field', 'Date': 'inline label - always visible', 'Time': 'hidden field', 'Description': 'no label', 'Attachment': 'inline label - always visible', });
 lyr_Survey_18.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
